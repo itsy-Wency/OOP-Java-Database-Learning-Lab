@@ -1,4 +1,4 @@
-# BYTEWISE — Java & Database Learning Lab
+# Java & Database Learning Lab
 
 A browser-based, interactive learning site built with **HTML, CSS, and vanilla JavaScript**. It is inspired by the learning-path, concept, and practice workflow of educational coding platforms; it is not a copy of Bitskwela/BitDev branding or source code.
 
