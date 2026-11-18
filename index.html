@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2816a8" />
+    <title>ITD102L — Java & Database Learning Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+        </div>
+        <div class="course-card">
+          <div class="course-icon">⌘</div>
+          <div><b>Java & Databases</b><small>ITD102L · OOP 1</small></div>
+        </div>
+        <div class="progress-card">
+          <div class="progress-line">
+            <span>YOUR PROGRESS</span><b id="progressText">0%</b>
+          </div>
+          <div class="progress-track"><i id="progressBar"></i></div>
+          <small id="progressMeta">0 of 0 challenges completed</small>
+        </div>
+        <div class="nav-heading">LEARNING PATH</div>
+        <nav id="topicNav" aria-label="Course topics"></nav>
+        <div class="sidebar-foot">
+        </div>
+      </aside>
+      <main class="main-area">
+        <header class="topbar">
+          <button
+            class="icon-btn mobile-menu"
+            id="menuToggle"
+            aria-label="Open menu"
+          >
+            ☰
+          </button>
+          <div class="breadcrumb">
+            COURSES <span>/</span> ITD102L <span>/</span>
+            <b>OBJECT-ORIENTED PROGRAMMING</b>
+          </div>
+          <div class="top-actions">
+            <span class="streak">✦ <b id="doneCount">0</b> completed</span
+            ><button class="avatar" title="Learner profile">M</button>
+          </div>
+        </header>
+        <section class="welcome-strip">
+          <div>
+            <div class="eyebrow"></div>
+            <h1>Object-Oriented <em>Programming</em></h1>
+            <p>
+              Learn the concepts, then prove you can use them. One challenge at
+              a time.
+            </p>
+          </div>
+          <div class="hero-orbit">
+            <div class="orbit-ring"></div>
+            <div class="orbit-core">DB<span>↔</span>JAVA</div>
+            <i class="orbit-node n1"></i><i class="orbit-node n2"></i
+            ><i class="orbit-node n3"></i>
+          </div>
+        </section>
+        <div class="content-wrap">
+          <div class="topic-heading">
+            <div>
+              <div class="eyebrow" id="topicKicker">DATABASE FOUNDATIONS</div>
+              <h2 id="topicTitle">Welcome to the lab</h2>
+              <p id="topicSubtitle">Choose a topic from the learning path.</p>
+            </div>
+            <div class="topic-count" id="topicCount">01 / 27</div>
+          </div>
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-tab="learn" role="tab">
+              ◈ Learning Concepts</button
+            ><button class="tab" data-tab="tasks" role="tab">
+              ⌘ Task Challenges <span class="tab-pill" id="taskTotal">4</span>
+            </button>
+          </div>
+          <section id="learnPanel" class="panel"></section>
+          <section id="tasksPanel" class="panel hidden"></section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
